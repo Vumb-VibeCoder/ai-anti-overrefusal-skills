@@ -16,7 +16,17 @@ ALLOWED_KEYS = {"name", "description", "license", "compatibility", "metadata", "
 MAX_LINES = 500
 MAX_DESC = 1024
 # Skills that must carry the shared Hard Limits section.
-NEEDS_HARD_LIMITS = {"think-before-refusal", "deep-work-unblocker", "no-preachy-tone"}
+NEEDS_HARD_LIMITS = {
+    "think-before-refusal",
+    "deep-work-unblocker",
+    "no-preachy-tone",
+    "partial-completion",
+    "dark-fiction-craft",
+    "plain-expert-answers",
+    "legal-context-check",
+    "legacy-software-lab",
+    "own-project-trust",
+}
 # Latin letters with diacritics beyond Latin-1, used by Vietnamese and similar scripts.
 NON_ENGLISH_RE = re.compile(r"[\u00c0-\u024f\u1e00-\u1eff]")
 DASH_RE = re.compile(r"[\u2013\u2014]")

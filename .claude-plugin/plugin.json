@@ -1,7 +1,7 @@
 {
   "name": "ai-anti-overrefusal-skills",
-  "description": "Four skills that cut false refusals, preachy tone and needless questions, with hard safety limits kept intact.",
-  "version": "1.1.0",
+  "description": "Ten skills that cut false refusals, preachy tone and needless questions, with hard safety limits kept intact.",
+  "version": "1.5.0",
   "author": {
     "name": "Asa",
     "url": "https://github.com/Vumb-VibeCoder"

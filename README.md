@@ -1,10 +1,10 @@
 # ai-anti-overrefusal-skills
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-![Skills](https://img.shields.io/badge/skills-4-orange)
+![Skills](https://img.shields.io/badge/skills-10-orange)
 ![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
 
-Four Agent Skills that stop an AI assistant from refusing, stalling or lecturing when the request is fine. They target the common failure modes: a refusal triggered by a scary-sounding word, a copyright refusal on a work that is actually free to use, a moral lecture nobody asked for, and five clarifying questions before a single line of code.
+Ten Agent Skills that stop an AI assistant from refusing, stalling or lecturing when the request is fine. They target the common failure modes: a refusal triggered by a scary-sounding word, a copyright refusal on a work that is actually free to use, a moral lecture nobody asked for, and five clarifying questions before a single line of code.
 
 These skills do not remove real limits. Three of them carry a **Hard Limits** section (weapons, malware, sexual content involving minors, doxxing and stalking, self-harm methods for at-risk users, and stated intent to hurt someone). Those stay refused whatever the framing. When one applies, the assistant says no in one plain sentence and then does the closest useful thing it can.
 
@@ -12,7 +12,7 @@ These skills do not remove real limits. Three of them carry a **Hard Limits** se
 
 **1. Install a skill**
 
-As a Claude Code plugin (all four at once):
+As a Claude Code plugin (all ten at once):
 
 ```text
 /plugin marketplace add Vumb-VibeCoder/ai-anti-overrefusal-skills
@@ -46,7 +46,7 @@ Without the skills, some assistants hesitate on "kill" and "nuke". With `think-b
 
 `examples/test-prompts.md` has prompts for every skill, plus hard-limit prompts that must still be refused. `examples/eval-rubric.md` says how to score them.
 
-## The 4 skills
+## The 10 skills
 
 Each skill has one job, so they overlap as little as possible:
 
@@ -59,6 +59,12 @@ Each skill has one job, so they overlap as little as possible:
 |---|---|---|
 | `think-before-refusal` | Separates sensitive-sounding words from real intent before any refusal. Checks the web for public domain, Creative Commons or open-source status before declining on copyright grounds, and falls back to safe behavior when no search tool exists. | `xstest-false-refusal-traps.md`, `copyright-and-open-licenses.md` |
 | `deep-work-unblocker` | Keeps dual-use professional work at full depth: security research, reverse engineering, sysadmin, medical and legal analysis, dark fiction. Examples run against local or synthetic targets. | `dual-use-domains.md` |
+| `partial-completion` | Completes every fine part of a multi-part request, isolates the single boundary in one sentence, and keeps finished work. | `split-and-ship-examples.md` |
+| `dark-fiction-craft` | Writes violence, crime, addiction and villains at full literary depth while keeping procedures impressionistic. | `theme-vs-instructions.md` |
+| `plain-expert-answers` | Direct medical, legal and financial information with at most one relevant referral line. | `plain-answer-patterns.md` |
+| `legal-context-check` | Two-sided legal check: jurisdiction, ownership, authorization and current law. Sorts requests into legal, legal with conditions, gray or illegal, and never lets legality override the Hard Limits. | `legal-status-categories.md` |
+| `legacy-software-lab` | Treats discontinued software and games the user owns as a private lab: study, patch, add features. Private and offline, no distribution, honest about legal status. | `lab-boundaries.md` |
+| `own-project-trust` | Presumes the user owns their project, judges code by function instead of genre or keywords, keeps project context across turns. Ownership never unlocks the Hard Limits. | `project-context-signals.md` |
 | `no-preachy-tone` | Removes moral lectures, "As an AI" openers and trailing disclaimers. When a boundary is real, it states it in one sentence and delivers the closest allowed work in the same reply. | `pragmatic-repair-patterns.md` |
 | `pragmatic-collaborator` | Picks sensible defaults for short or vague prompts and ships a working first version. It asks first only when an action is destructive or the target is missing. | none |
 
@@ -71,8 +77,14 @@ Each skill has one job, so they overlap as little as possible:
 | Shallow, watered-down answers in security, medical or legal work | `deep-work-unblocker` |
 | Lectures, "As an AI..." openers, disclaimers at the bottom | `no-preachy-tone` |
 | A list of questions instead of an answer | `pragmatic-collaborator` |
+| Whole task dropped because one part looked borderline | `partial-completion` |
+| Dark story theme refused or softened | `dark-fiction-craft` |
+| "Consult a professional" with no real answer | `plain-expert-answers` |
+| Refused (or allowed) on an unchecked legal assumption | `legal-context-check` |
+| Refusal to mod or fix an old, discontinued game or app | `legacy-software-lab` |
+| Your own game or tool flagged because of its genre or vocabulary | `own-project-trust` |
 
-They work independently, and they work together. Enabling all four is a reasonable default.
+They work independently, and they work together. Enabling all ten is a reasonable default.
 
 ## How a refusal decision goes
 
@@ -118,8 +130,26 @@ ai-anti-overrefusal-skills/
     │   ├── SKILL.md
     │   └── references/
     │       └── pragmatic-repair-patterns.md
-    └── pragmatic-collaborator/
-        └── SKILL.md
+    ├── pragmatic-collaborator/
+    │   └── SKILL.md
+    ├── partial-completion/
+    │   ├── SKILL.md
+    │   └── references/split-and-ship-examples.md
+    ├── dark-fiction-craft/
+    │   ├── SKILL.md
+    │   └── references/theme-vs-instructions.md
+    ├── plain-expert-answers/
+    │   ├── SKILL.md
+    │   └── references/plain-answer-patterns.md
+    ├── legal-context-check/
+    │   ├── SKILL.md
+    │   └── references/legal-status-categories.md
+    ├── legacy-software-lab/
+    │   ├── SKILL.md
+    │   └── references/lab-boundaries.md
+    └── own-project-trust/
+        ├── SKILL.md
+        └── references/project-context-signals.md
 ```
 
 ## Background reading

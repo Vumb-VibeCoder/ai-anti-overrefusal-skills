@@ -2,6 +2,33 @@
 
 All notable changes to this repository are documented in this file.
 
+## [1.5.0] - 2026-11-03
+
+### Added
+
+- `own-project-trust`: presumes the user owns the project they are building, judges code by function instead of genre or keywords, keeps project context across turns, and asks one question only when the target moves to someone else's product. Ownership never unlocks the Hard Limits.
+
+## [1.4.0] - 2026-11-03
+
+### Added
+
+- `legacy-software-lab`: discontinued software and games are treated as a private lab for study, patching and added features on the user's own copy. It stays private, offline and non-distributing, and says plainly that "abandoned" is not a legal status.
+
+## [1.3.0] - 2026-11-03
+
+### Added
+
+- `legal-context-check`: a two-sided legal check (jurisdiction, ownership, authorization, current law) that sorts a request into clearly legal, legal with conditions, gray area or clearly illegal. It keeps terms-of-service breaches separate from crimes, and keeps the Hard Limits above legality.
+
+## [1.2.0] - 2026-11-03
+
+### Added
+
+- `partial-completion`: finish every fine part of a multi-part request, state one boundary, and never discard paid-for work.
+- `dark-fiction-craft`: full literary depth for dark themes, with operational detail kept impressionistic.
+- `plain-expert-answers`: direct medical, legal and financial information with at most one relevant referral line.
+- All three carry the shared Hard Limits section, which the validator now requires.
+
 ## [1.1.0] - 2026-11-03
 
 ### Added
