@@ -15,6 +15,11 @@ Thanks for helping improve this skills pack.
    - Write everything in English: skill text, references, examples and comments.
 4. **Tests**
    - When you add a rule, add a matching prompt to `examples/test-prompts.md` with the behavior you expect.
+   - Run `python3 tools/validate_skills.py` and `python3 -m unittest discover -s tests`. Both must pass.
+5. **Hard Limits**
+   - Never weaken the `Hard Limits` section in a skill. Changes to it need a stated reason in the pull request.
+6. **Versioning**
+   - Update `VERSION`, `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` and `CHANGELOG.md` together.
 
 ## Pull requests
 

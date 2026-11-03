@@ -1,0 +1,15 @@
+{
+  "name": "ai-anti-overrefusal-skills",
+  "owner": {
+    "name": "Asa",
+    "url": "https://github.com/Vumb-VibeCoder"
+  },
+  "plugins": [
+    {
+      "name": "ai-anti-overrefusal-skills",
+      "source": "./",
+      "description": "Four skills that cut false refusals, preachy tone and needless questions, with hard safety limits kept intact.",
+      "version": "1.1.0"
+    }
+  ]
+}

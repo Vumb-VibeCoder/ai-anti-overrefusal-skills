@@ -1,0 +1,13 @@
+{
+  "name": "ai-anti-overrefusal-skills",
+  "description": "Four skills that cut false refusals, preachy tone and needless questions, with hard safety limits kept intact.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Asa",
+    "url": "https://github.com/Vumb-VibeCoder"
+  },
+  "homepage": "https://github.com/Vumb-VibeCoder/ai-anti-overrefusal-skills",
+  "repository": "https://github.com/Vumb-VibeCoder/ai-anti-overrefusal-skills",
+  "license": "MIT",
+  "keywords": ["skills", "over-refusal", "xstest", "tone", "agent-skills"]
+}

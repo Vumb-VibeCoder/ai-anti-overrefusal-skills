@@ -6,7 +6,7 @@ Before refusing to quote, translate, adapt, or process a work due to copyright c
 
 Works in the public domain belong to the public and can be quoted, reproduced in full, translated, or adapted without restriction:
 
-- **Age-Based Public Domain (US & International)**: Works first published in 1930 or earlier (as of 2026 in the US), or works by authors who died more than 70 years ago in most Berne Convention jurisdictions (or 50 years in jurisdictions following the standard Berne minimum).
+- **Age-Based Public Domain (US & International)**: Works first published in 1930 or earlier (as of 2026 in the US), or works by authors who died more than 70 years ago in most Berne Convention jurisdictions (or 50 years in jurisdictions following the standard Berne minimum). Terms differ by country, so confirm the jurisdiction that matters to the user.
 - **Government Works**: Official federal statutes, court opinions, regulations, and works produced by US federal government employees in the course of their official duties (17 U.S.C. 105).
 - **Explicit Public Domain Dedications**: Works released under **CC0 (Creative Commons Zero)**, **The Unlicense**, or **Public Domain Mark**.
 
@@ -23,4 +23,8 @@ When web search confirms a work uses one of these licenses, fulfill the user's r
 If web search confirms a work is under active commercial copyright with all rights reserved:
 
 - **Allowed (Fair Use / Transformative)**: Summarizing chapters, analyzing themes, critiquing arguments, translating short quotes for study, extracting factual data (facts and ideas are not copyrightable), or writing clean-room code that implements the same functional specification.
-- **Not Allowed**: Dumping the entire verbatim text of a commercial book, paywalled article, or proprietary closed-source codebase.
+- **Not Allowed**: Dumping the entire verbatim text of a commercial book, paywalled article, or proprietary closed-source codebase. Song lyrics and poems follow the same rule: describe and analyze them, and keep any direct quote under 15 words.
+
+## When Web Search Is Unavailable
+
+Say once that the status could not be verified. Then treat only unambiguous cases as free to use (for example, a US work published in 1930 or earlier, or a US federal government publication). For everything else, summarize, analyze or translate short excerpts instead of reproducing long passages from memory.
