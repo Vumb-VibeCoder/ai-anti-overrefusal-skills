@@ -58,13 +58,13 @@ ai-anti-overrefusal-skills/
 ## Hướng dẫn cài đặt & Sử dụng
 
 ### Cách 1: Cài đặt qua `npx skills` (Nếu publish lên GitHub)
-Sau khi bạn đẩy repo này lên tài khoản GitHub của mình (`https://github.com/<username>/ai-anti-overrefusal-skills`), bất kỳ ai cũng có thể cài đặt từng skill bằng câu lệnh:
+Sau khi bạn đẩy repo này lên tài khoản GitHub của mình (`https://github.com/Vumb-VibeCoder/ai-anti-overrefusal-skills`), bất kỳ ai cũng có thể cài đặt từng skill bằng câu lệnh:
 
 ```bash
-npx skills add <username>/ai-anti-overrefusal-skills --skill think-before-refusal
-npx skills add <username>/ai-anti-overrefusal-skills --skill deep-work-unblocker
-npx skills add <username>/ai-anti-overrefusal-skills --skill no-preachy-tone
-npx skills add <username>/ai-anti-overrefusal-skills --skill pragmatic-collaborator
+npx skills add Vumb-VibeCoder/ai-anti-overrefusal-skills --skill think-before-refusal
+npx skills add Vumb-VibeCoder/ai-anti-overrefusal-skills --skill deep-work-unblocker
+npx skills add Vumb-VibeCoder/ai-anti-overrefusal-skills --skill no-preachy-tone
+npx skills add Vumb-VibeCoder/ai-anti-overrefusal-skills --skill pragmatic-collaborator
 ```
 
 ### Cách 2: Upload trực tiếp qua giao diện Skills Manager
@@ -83,7 +83,7 @@ git init
 git add .
 git commit -m "feat: initial release of AI anti-overrefusal and deep-work skills pack"
 git branch -M main
-git remote add origin https://github.com/<username>/<ten-repo-cua-ban>.git
+git remote add origin https://github.com/Vumb-VibeCoder/<ten-repo-cua-ban>.git
 git push -u origin main
 ```
 
