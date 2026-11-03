@@ -83,7 +83,7 @@ git init
 git add .
 git commit -m "feat: initial release of AI anti-overrefusal and deep-work skills pack"
 git branch -M main
-git remote add origin https://github.com/Vumb-VibeCoder/<ten-repo-cua-ban>.git
+git remote add origin https://github.com/Vumb-VibeCoder/ai-anti-overrefusal-skills.git
 git push -u origin main
 ```
 
