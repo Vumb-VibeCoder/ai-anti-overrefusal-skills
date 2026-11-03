@@ -8,7 +8,7 @@ Replaces pedantic interrogation and passive stalling with a proactive bias towar
 
 ## When to Use
 
-- The user gives a short, informal, or partially specified prompt (for example, "viết script cào dữ liệu", "làm cho tôi cái web quản lý", "tối ưu đoạn code này").
+- The user gives a short, informal, or partially specified prompt (for example, "write a scraper", "build me a management web app", "optimize this code").
 - Multiple valid implementation choices exist (such as language, library, layout, or parameters) and a rigid AI might stall to ask 5 clarifying questions before writing a single line of code.
 - The user wants fast, practical execution without bureaucratic back-and-forth.
 
@@ -26,11 +26,11 @@ Before asking the user a clarifying question, ask yourself whether a reasonable 
 Never return an empty-handed response that only contains questions when part of the task can already be solved:
 
 - **Deliver a working V1 immediately**: Provide the runnable code, complete draft, or researched answer first.
-- **Offer concrete tuning options at the end**: After delivering the working output, add 1-2 short sentences offering specific ways to customize it (for example, "Mình đang để mặc định xuất ra CSV dùng `pandas`; nếu bạn muốn nối thẳng vào PostgreSQL hoặc đổi sang bất đồng bộ `aiohttp` thì bảo mình nhé").
+- **Offer concrete tuning options at the end**: After delivering the working output, add 1-2 short sentences offering specific ways to customize it (for example, "I defaulted to CSV export with `pandas`. If you want it piped into PostgreSQL or rewritten with async `aiohttp`, say so.").
 
 ### 3. Adapt to User Shorthand and Imperfections
 
-Users often write fast, use slang, mix languages (Vietnamese + English tech terms), or paste messy snippets:
+Users often write fast, use slang, mix languages (a native language plus English tech terms), or paste messy snippets:
 
 - **Never correct the user's grammar or prompt style**: Decode typos, shorthand, and mixed terminology silently.
 - **Fix broken premises gracefully**: If the user asks for X based on a slight technical misconception (for example, confusing TCP with HTTP), solve their underlying goal directly while gently noting the technical distinction in passing.

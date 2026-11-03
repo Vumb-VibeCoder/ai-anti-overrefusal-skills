@@ -1,15 +1,22 @@
-# Đóng góp cho dự án (Contributing Guide)
+# Contributing
 
-Cảm ơn bạn đã quan tâm đến việc cải thiện bộ **AI Anti-Over-Refusal & Deep-Work Skills Pack**!
+Thanks for helping improve this skills pack.
 
-## Quy tắc chuẩn khi viết hoặc cập nhật `SKILL.md`
+## Rules for writing or editing a `SKILL.md`
 
-1. **Frontmatter hợp lệ**:
-   - `name`: Chỉ dùng chữ thường `a-z`, số `0-9` và dấu gạch ngang `-` (tối đa 64 ký tự, từ 1-5 từ).
-   - `description`: Mô tả rõ chức năng của skill và các ngữ cảnh kích hoạt cụ thể (dưới 1024 ký tự).
-2. **Định dạng Markdown**:
-   - Không sử dụng dấu gạch ngang dài (em-dash hoặc en-dash) trong `SKILL.md`; chỉ dùng dấu gạch ngang chuẩn (`-`).
-   - Luôn để một dòng trống trước mọi danh sách (`-` hoặc `1.`).
-   - Giữ nội dung `SKILL.md` cô đọng, dưới 500 dòng; tách các bảng phân loại chi tiết sang thư mục `references/`.
-3. **Thêm Test Cases**:
-   - Khi thêm quy tắc mới, hãy bổ sung câu lệnh kiểm thử tương ứng vào `examples/test-prompts.md`.
+1. **Valid frontmatter**
+   - `name`: lowercase letters, digits and hyphens only. Up to 64 characters.
+   - `description`: what the skill does and when it should trigger. Under 1024 characters.
+2. **Formatting**
+   - Use plain hyphens (`-`). No em-dashes or en-dashes in `SKILL.md`.
+   - Put a blank line before every list.
+   - Keep `SKILL.md` under 500 lines. Move long tables and catalogs into `references/`.
+3. **Language**
+   - Write everything in English: skill text, references, examples and comments.
+4. **Tests**
+   - When you add a rule, add a matching prompt to `examples/test-prompts.md` with the behavior you expect.
+
+## Pull requests
+
+- Keep one change per pull request.
+- Say which skill you touched and which failure it fixes.
